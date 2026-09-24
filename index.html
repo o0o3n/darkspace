@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Darkspace — цифровая инфраструктура, безопасность и разработка для бизнеса." />
+    <title>Darkspace — технологии для бизнеса</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @media (max-width: 650px) {
+        .main-nav.open { display: flex; position: absolute; top: 66px; left: 0; right: 0; margin: 0; padding: 16px 24px; background: var(--paper); border-bottom: 1px solid var(--line); flex-direction: column; gap: 0; }
+        .main-nav.open a { padding: 12px 0; }
+        .main-nav.open a.active::after { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Darkspace — на главную">
+        <span class="brand-mark"><i></i><i></i><i></i></span>
+        <span>DARK<span>SPACE</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a class="active" href="index.html">Главная</a>
+        <a href="services.html">Услуги</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <a class="header-link" href="contacts.html">Обсудить проект <span>↗</span></a>
+      <button class="theme-toggle" type="button" aria-label="Включить чёрную тему" aria-pressed="false">◐</button>
+      <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="kicker"><span></span> ИТ-партнёр для растущего бизнеса</p>
+          <h1>Ваш бизнес.<br /><em>Наша экспертиза.</em></h1>
+          <p class="hero-text">Проектируем и поддерживаем цифровую инфраструктуру, которая помогает работать быстрее, безопаснее и спокойнее.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contacts">Обсудить задачу <span>↗</span></a>
+            <a class="text-link" href="#services">Наши услуги <span>↓</span></a>
+          </div>
+          <div class="hero-proof"><span class="proof-dot"></span><strong>Надёжность — это система</strong><small>От первого запроса до поддержки 24/7</small></div>
+        </div>
+        <div class="hero-visual" aria-label="Инженер работает с цифровой инфраструктурой">
+          <div class="hero-photo"></div>
+          <div class="hero-photo-overlay"></div>
+          <div class="hero-badge"><strong>15+</strong><span>лет создаём<br />рабочие системы</span></div>
+          <div class="hero-location"><span class="status-dot"></span> TASHKENT / ONLINE</div>
+          <div class="hero-caption"><span>01</span><b>Системы, которые<br />держат бизнес</b></div>
+        </div>
+      </section>
+
+      <section class="trust-row" aria-label="Преимущества">
+        <div><strong>15+</strong><span>лет в технологиях</span></div>
+        <div><strong>240</strong><span>запущенных проектов</span></div>
+        <div><strong>24/7</strong><span>поддержка систем</span></div>
+        <p>Помогаем бизнесу<br />двигаться быстрее.</p>
+      </section>
+
+      <section class="services section" id="services">
+        <div class="section-heading">
+          <div><p class="kicker"><span></span> Что мы делаем</p><h2>Один партнёр.<br /><em>Все решения.</em></h2></div>
+          <p>Собираем технологии в единую систему, чтобы они упрощали работу, защищали данные и помогали вам расти.</p>
+        </div>
+        <div class="filter-bar" role="tablist" aria-label="Фильтр услуг">
+          <button class="filter active" data-filter="all" role="tab">Все услуги</button>
+          <button class="filter" data-filter="software" role="tab">Разработка</button>
+          <button class="filter" data-filter="infrastructure" role="tab">Инфраструктура</button>
+          <button class="filter" data-filter="security" role="tab">Безопасность</button>
+        </div>
+        <div class="service-grid">
+          <article class="service-card featured" data-category="software">
+            <div class="card-image image-web"><span>01 / 04</span></div>
+            <div class="card-content"><p class="card-label">Digital products</p><h3>Сайты и<br />приложения</h3><a href="#contacts" aria-label="Подробнее о разработке сайтов и приложений">Подробнее <span>↗</span></a></div>
+          </article>
+          <article class="service-card" data-category="infrastructure">
+            <div class="card-image image-network"><span>02 / 04</span></div>
+            <div class="card-content"><p class="card-label">Infrastructure</p><h3>Сети и<br />серверы</h3><a href="#contacts" aria-label="Подробнее о сетях и серверах">Подробнее <span>↗</span></a></div>
+          </article>
+          <article class="service-card" data-category="security">
+            <div class="card-image image-security"><span>03 / 04</span></div>
+            <div class="card-content"><p class="card-label">Protection</p><h3>Безопасность<br />и контроль</h3><a href="#contacts" aria-label="Подробнее о безопасности и контроле">Подробнее <span>↗</span></a></div>
+          </article>
+          <article class="service-card" data-category="infrastructure">
+            <div class="card-image image-telephony"><span>04 / 04</span></div>
+            <div class="card-content"><p class="card-label">Communication</p><h3>IP-телефония<br />и облако</h3><a href="#contacts" aria-label="Подробнее о телефонии и облаке">Подробнее <span>↗</span></a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="navigator section" id="navigator">
+        <div class="navigator-intro">
+          <p class="kicker"><span></span> Быстрый старт</p>
+          <h2>Не знаете,<br /><em>с чего начать?</em></h2>
+          <p>Выберите задачу — мы покажем, какое решение подойдёт вашему бизнесу.</p>
+        </div>
+        <div class="navigator-tool">
+          <div class="navigator-step"><span>01</span><b>Что сейчас важнее всего?</b></div>
+          <div class="choice-grid" role="group" aria-label="Выберите задачу">
+            <button class="choice active" data-result="Разработка цифрового продукта" data-copy="Сайт, веб-сервис или мобильное приложение под вашу задачу.">Запустить сайт или приложение <span>↗</span></button>
+            <button class="choice" data-result="ИТ-инфраструктура" data-copy="Сеть, серверы и рабочие места, которые не тормозят рост команды.">Настроить офис и сеть <span>↗</span></button>
+            <button class="choice" data-result="Комплексная безопасность" data-copy="Видеонаблюдение, контроль доступа и защита данных в одной системе.">Защитить бизнес <span>↗</span></button>
+            <button class="choice" data-result="Связь и автоматизация" data-copy="IP-телефония, облачные АТС и инструменты для команды.">Улучшить коммуникации <span>↗</span></button>
+          </div>
+          <div class="navigator-result"><span class="result-label">Наше направление для вас</span><strong id="resultTitle">Разработка цифрового продукта</strong><p id="resultCopy">Сайт, веб-сервис или мобильное приложение под вашу задачу.</p><a href="#contacts">Обсудить решение <span>↗</span></a></div>
+        </div>
+      </section>
+
+      <section class="cases section" id="cases">
+        <div class="section-heading"><div><p class="kicker"><span></span> Реальные задачи</p><h2>Технологии<br /><em>с результатом.</em></h2></div><p>Каждый проект начинаем с бизнес-задачи, а заканчиваем измеримым изменением в работе команды.</p></div>
+        <div class="case-grid">
+          <article class="case-card case-dark"><div class="case-top"><span>01 / E-COMMERCE</span><b>+38%</b></div><h3>Интернет-магазин<br />для нового рынка</h3><p>Спроектировали каталог, оплату и личный кабинет. Запуск за 8 недель.</p><a href="contacts.html">Обсудить похожий проект <span>↗</span></a></article>
+          <article class="case-card case-blue"><div class="case-top"><span>02 / SECURITY</span><b>24/7</b></div><h3>Безопасный офис<br />для команды 120+</h3><p>Сеть, контроль доступа и видеонаблюдение объединили в одну систему.</p><a href="contacts.html">Обсудить похожий проект <span>↗</span></a></article>
+          <article class="case-card case-light"><div class="case-top"><span>03 / COMMUNICATION</span><b>-42%</b></div><h3>Связь без границ<br />для филиалов</h3><p>Облачная АТС и IP-телефония сократили расходы на коммуникации.</p><a href="contacts.html">Обсудить похожий проект <span>↗</span></a></article>
+        </div>
+      </section>
+
+      <section class="approach section" id="approach">
+        <div class="approach-number">03</div>
+        <div class="approach-copy"><p class="kicker"><span></span> Наш подход</p><h2>Сложное<br /><em>делаем понятным.</em></h2><p>Не продаём отдельные инструменты. Сначала разбираемся в задаче, затем проектируем решение, которое действительно приносит пользу.</p><a class="text-link" href="#contacts">Познакомиться ближе <span>↗</span></a></div>
+        <div class="approach-points"><div><b>01</b><span>Слушаем и<br />погружаемся</span></div><div><b>02</b><span>Проектируем<br />систему</span></div><div><b>03</b><span>Запускаем и<br />поддерживаем</span></div></div>
+      </section>
+
+      <section class="contact-section section" id="contacts">
+        <div><p class="kicker"><span></span> Начнём разговор</p><h2>Есть задача?<br /><em>Давайте решим.</em></h2><p class="contact-text">Расскажите, что нужно улучшить. Ответим в течение рабочего дня.</p></div>
+        <form class="contact-form" id="contactForm"><label>Ваше имя<input type="text" name="name" placeholder="Как к вам обращаться?" required /></label><label>Телефон или e-mail<input type="text" name="contact" placeholder="+998 90 000 00 00" required /></label><label>Коротко о задаче<textarea name="message" rows="3" placeholder="Например: нужен сайт для компании"></textarea></label><button class="button button-primary" type="submit">Отправить заявку <span>↗</span></button><p class="form-status" id="formStatus" role="status"></p></form>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark"><i></i><i></i><i></i></span><span>DARK<span>SPACE</span></span></a><p>Технологии, которым можно доверять.</p><a href="mailto:hello@darkspace.uz">hello@darkspace.uz ↗</a></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

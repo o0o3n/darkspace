@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Свяжитесь с Darkspace и обсудите задачу для вашего бизнеса." />
+    <title>Контакты — Darkspace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Darkspace — на главную"><span class="brand-mark"><i></i><i></i><i></i></span><span>DARK<span>SPACE</span></span></a>
+      <nav class="main-nav" aria-label="Основная навигация"><a href="index.html">Главная</a><a href="services.html">Услуги</a><a class="active" href="contacts.html">Контакты</a></nav>
+      <a class="header-link" href="#brief">Заполнить бриф <span>↗</span></a>
+      <button class="theme-toggle" type="button" aria-label="Включить чёрную тему" aria-pressed="false">◐</button>
+      <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+    </header>
+    <main>
+      <section class="page-hero contact-hero"><p class="kicker"><span></span> Контакты</p><h1>Расскажите,<br /><em>что нужно сделать.</em></h1><p>Опишите задачу в свободной форме. Мы изучим её и вернёмся с понятным планом действий.</p></section>
+      <section class="contact-section section" id="brief">
+        <div><p class="kicker"><span></span> Бриф на проект</p><h2>Давайте<br /><em>познакомимся.</em></h2><p class="contact-text">Ответим в течение рабочего дня. Первая консультация бесплатна.</p><div class="contact-details"><a href="mailto:hello@darkspace.uz">hello@darkspace.uz</a><a href="tel:+998712000800">+998 71 200 08 00</a><span>Ташкент, Узбекистан</span></div></div>
+        <form class="contact-form" id="contactForm"><label>Ваше имя<input type="text" name="name" placeholder="Как к вам обращаться?" required /></label><label>Телефон или e-mail<input type="text" name="contact" placeholder="+998 90 000 00 00" required /></label><label>Что нужно сделать?<textarea name="message" rows="5" placeholder="Расскажите о задаче, сроках и масштабе"></textarea></label><button class="button button-primary" type="submit">Отправить заявку <span>↗</span></button><p class="form-status" id="formStatus" role="status"></p></form>
+      </section>
+      <section class="contact-band"><div><span class="status-dot"></span><strong>Мы на связи</strong><p>Пн–Пт, 09:00–18:00</p></div><div><span class="status-dot"></span><strong>Работаем по всему Узбекистану</strong><p>Офлайн и удалённо</p></div></section>
+    </main>
+    <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark"><i></i><i></i><i></i></span><span>DARK<span>SPACE</span></span></a><p>Технологии, которым можно доверять.</p><a href="mailto:hello@darkspace.uz">hello@darkspace.uz ↗</a></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
